@@ -9,5 +9,8 @@ def index(request):
 
 
 def about(request):
-    return render(request, 'templates/main/about.html')
+    return render(request, 'main/about.html')
+
+def communications(request):
+    return render(request, 'main/communications.html')
 

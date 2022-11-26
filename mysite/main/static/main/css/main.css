@@ -1,10 +1,12 @@
-img.img{
-width: 100px;
-float: left;
-}
 body{
     background: #181818;
 }
+
+img.img{
+width: 230px;
+float: left;
+}
+
 span.english_image{
     font-size: 40px;
     margin-left: 10px;
@@ -14,9 +16,7 @@ span.english_image{
     left: -10px;
 
 }
-body{
-    background: 2c2c2c;
-}
+
 aside {
     float: left;
     background: #181818;
@@ -34,15 +34,24 @@ aside h3{
 }
 aside ul {
     list-style: none;
-    }
+}
+
 aside ul li {
     color: #fff;
     display: block;
     margin-top: 20px;
-    transition: all.6s ease;
+    transition: transform.6s ease;
 }
 
 aside ul li:hover, aside ul a:hover {
     color:#eb5959;
     text-decoration: none;
     transform: scale(1.05);
+}
+
+
+
+h1, h3, h6{
+    text-align: center;
+    color: #00ffff;
+}

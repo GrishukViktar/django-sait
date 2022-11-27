@@ -4,13 +4,19 @@
 
 {% block content %}
     <div class="features">
-    <h1>have  </h1>
-    <h3>the road of astep</h3>
-    <h6>the road will be overcome by the walking</h6>
-    <p>Домашняя работа - тут будут публиковаться мои домашнии работы!<br>
-        Для проверки жми по <button class="btn btn-warning"><a href="{% url 'homework' %}">ссылке</a>></button>
-    </p>
+        <h1>Новости на сайте</h1>
+        {% if news %}
+            {% for el in news %}
+                <div class="alert alert-warning">
+                    <h3>{{ el.title }}</h3>
+                    <p> {{ el.anons }}<br>
+                    {{ el.full_text }}
+                    </p>
 
-        <>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>You haven't news!</p>
+        {% endif %}
     </div>
 {% endblock %}

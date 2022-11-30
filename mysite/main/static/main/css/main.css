@@ -72,3 +72,8 @@ form{
     width: 500px;
     margin-top: 50px;
 }
+form.date{
+    margin-left: 32%;
+    width: 500px;
+    margin-top: 50px;
+}

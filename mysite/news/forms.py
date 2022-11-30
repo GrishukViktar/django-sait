@@ -16,12 +16,12 @@ class ArticleForm(ModelForm):
                 'class': 'form-control',
                 'placeholder': 'Анонс статьи'
             }),
-            "date": DateTimeInput(attrs={
-                'class': 'from-control',
-                'placeholder': 'Дата'
-            }),
             "full_text": Textarea(attrs={
                 'class': 'form-control',
                 'placeholder': 'Текст статьи'
+            }),
+            "date": DateTimeInput(attrs={
+                'class': 'from-control',
+                'placeholder': 'Дата'
             })
         }

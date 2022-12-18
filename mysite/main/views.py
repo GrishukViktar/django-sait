@@ -18,4 +18,10 @@ def homework(request):
     return render(request, 'main/homework.html')
 
 
+def registration(request):
+    return render(request, 'main/registration.html')
+
+
+
+
 

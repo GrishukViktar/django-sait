@@ -44,3 +44,5 @@ def create(request):
     }
 
     return render(request, 'news/create.html', data)
+
+
